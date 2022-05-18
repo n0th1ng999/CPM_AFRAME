@@ -8,7 +8,7 @@ Buttons.forEach( button => button.addEventListener("click", (event) => {
   
   console.log('asdsadasdas');
   
-   Panel.setAttribute("text", `value:  ${button.id} ;  color:  #000000 ;width: 3`);
+   Panel.setAttribute("text", `value:  ${button.id} ;  color:  #fff ;width: 3`);
    
   
 

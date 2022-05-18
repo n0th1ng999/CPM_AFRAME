@@ -5,6 +5,12 @@
   </head>
   <body>
     <a-scene>
+      
+      <a-assets>
+        <a-asset-item id="Table" src="/Assets/Table/scene.gltf"></a-asset-item>
+        <a-asset-item id="RedButton" src="/Assets/Button/scene.gltf"></a-asset-item>
+      </a-assets>
+
 
       <!--CAMERA-->
       <a-entity position="0 2 1" camera="" wasd-controls="acceleration: 50" look-controls=""  rotation="0 0 0"
@@ -17,114 +23,122 @@
       <!--CAMERA-->
 
 
-      <a-box position="-3 0.5 -3" width="8" depth="2" height="1.5" rotation="0 45 0" color="#4CC3D9">
-        <a-box id="" position="-2 0.8 -0.4" width="0.2" height="0.2" depth="0.2" >
-           
-        </a-box>
+      <a-entity gltf-model="#Table" position="-3 0.5 -3" scale="2 2 2" rotation="0 140 0" color="#4CC3D9">
+       
 
-        <a-box class="button"  id="A" position="-2 0.8 0.4" width="0.2" height="0.2" depth="0.2" >
+        <a-entity class="button" gltf-model="#RedButton"  id="A" position="-0.4 0.51 -1.0"  scale="0.3 0.3 0.3" >
           
-        </a-box>
+        </a-entity>
 
-        <a-box class="button"  id="B" position="-1.5 0.8 -0.4" width="0.2" height="0.2" depth="0.2" >
+        <a-entity class="button" gltf-model="#RedButton" id="B" position="0.4 0.51 -1.00"  scale="0.3 0.3 0.3">
 
-        </a-box>
+        </a-entity>
 
-        <a-box class="button"  id="C" position="-1.5 0.8 0.4" width="0.2" height="0.2" depth="0.2" >
 
-        </a-box>
-
-        <a-box class="button"  id="D" position="-1 0.8 -0.4" width="0.2" height="0.2" depth="0.2" >
-
-        </a-box>
-
-        <a-box class="button"  id="E" position="-1.0 0.8 0.4" width="0.2" height="0.2" depth="0.2" >
-
-        </a-box>
-        
-        <a-box class="button" id="F" position="-0.5 0.8 -0.4" width="0.2" height="0.2" depth="0.2" >
-
-        </a-box>
-
-        <a-box class="button" id="G" position="-0.5 0.8 0.4" width="0.2" height="0.2" depth="0.2" >
-
-        </a-box>
-                
-        <a-box class="button" id="H" position="0 0.8 -0.4" width="0.2" height="0.2" depth="0.2" >
-
-        </a-box>
-
-        <a-box class="button" id="I" position="0 0.8 0.4" width="0.2" height="0.2" depth="0.2" >
-
-        </a-box>
-                        
-        <a-box class="button" id="J" position="0.5 0.8 -0.4" width="0.2" height="0.2" depth="0.2" >
-
-        </a-box>
-
-        <a-box class="button" id="K" position="0.5 0.8 0.4" width="0.2" height="0.2" depth="0.2" >
-
-        </a-box>
-                      
-        <a-box class="button" id="L" position="1 0.8 -0.4" width="0.2" height="0.2" depth="0.2" >
-
-        </a-box>
-
-        <a-box class="button" id="M" position="1 0.8 0.4" width="0.2" height="0.2" depth="0.2" >
-
-        </a-box>
-
-        <a-box class="button" id="Q" position="1.5 0.8 -0.4" width="0.2" height="0.2" depth="0.2" >
-
-        </a-box>
-
-        <a-box class="button" id="R" position="1.5 0.8 0.4" width="0.2" height="0.2" depth="0.2" >
-
-        </a-box>
-
-        <a-box class="button" id="S" position="2 0.8 -0.4" width="0.2" height="0.2" depth="0.2" >
-
-        </a-box>
-
-        <a-box class="button" id="T" position="2 0.8 0.4" width="0.2" height="0.2" depth="0.2" >
-
-        </a-box>
-
-        <a-box class="button" id="U" position="2.5 0.8 -0.4" width="0.2" height="0.2" depth="0.2" >
-
-        </a-box>
-
-        <a-box class="button" id="V" position="2.5 0.8 0.4" width="0.2" height="0.2" depth="0.2" >
-
-        </a-box>
-
-        <a-box class="button" id="W" position="3 0.8 -0.4" width="0.2" height="0.2" depth="0.2" >
-
-        </a-box>
-
-        <a-box class="button"  id="X" position="3 0.8 0.4" width="0.2" height="0.2" depth="0.2" >
-
-        </a-box>
-
-        <a-box class="button" id="Y" position="3.5 0.8 -0.4" width="0.2" height="0.2" depth="0.2" >
+        <a-entity class="button" gltf-model="#RedButton"  id="C" position="-0.4 0.51 -0.80"  scale="0.3 0.3 0.3" >
           
-        </a-box>
+        </a-entity>
 
-        <a-box class="button" id="Z" position="3.5 0.8 0.4" width="0.2" height="0.2" depth="0.2" >
+        <a-entity class="button" gltf-model="#RedButton" id="D" position="0.4 0.51 -0.80"  scale="0.3 0.3 0.3">
 
-        </a-box>
+        </a-entity>
+
+        <a-entity class="button" gltf-model="#RedButton"  id="E" position="-0.4 0.51 -0.60"  scale="0.3 0.3 0.3" >
+          
+        </a-entity>
+
+        <a-entity class="button" gltf-model="#RedButton" id="F" position="0.4 0.51 -0.60"  scale="0.3 0.3 0.3">
+
+        </a-entity>
+
+        <a-entity class="button" gltf-model="#RedButton"  id="G" position="-0.4 0.51 -0.40"  scale="0.3 0.3 0.3" >
+          
+        </a-entity>
+
+        <a-entity class="button" gltf-model="#RedButton" id="H" position="0.4 0.51 -0.40"  scale="0.3 0.3 0.3">
+
+        </a-entity>
+
+        <a-entity class="button" gltf-model="#RedButton"  id="I" position="-0.4 0.51 -0.20"  scale="0.3 0.3 0.3" >
+          
+        </a-entity>
+
+        <a-entity class="button" gltf-model="#RedButton" id="J" position="0.4 0.51 -0.20"  scale="0.3 0.3 0.3">
+
+        </a-entity>
+
+        <a-entity class="button" gltf-model="#RedButton"  id="K" position="-0.4 0.51 0"  scale="0.3 0.3 0.3" >
+          
+        </a-entity>
+
+        <a-entity class="button" gltf-model="#RedButton" id="L" position="0.4 0.51 0"  scale="0.3 0.3 0.3">
+
+        </a-entity>
+
+        <a-entity class="button" gltf-model="#RedButton"  id="M" position="-0.4 0.51 0.2"  scale="0.3 0.3 0.3" >
+          
+        </a-entity>
+
+        <a-entity class="button" gltf-model="#RedButton" id="N" position="0.4 0.51 0.2"  scale="0.3 0.3 0.3">
+
+        </a-entity>
+
+        <a-entity class="button" gltf-model="#RedButton"  id="P" position="-0.4 0.51 0.4"  scale="0.3 0.3 0.3" >
+          
+        </a-entity>
+
+        <a-entity class="button" gltf-model="#RedButton" id="Q" position="0.4 0.51 0.4"  scale="0.3 0.3 0.3">
+
+        </a-entity>
+
+        <a-entity class="button" gltf-model="#RedButton"  id="R" position="-0.4 0.51 0.6"  scale="0.3 0.3 0.3" >
+          
+        </a-entity>
+
+        <a-entity class="button" gltf-model="#RedButton" id="S" position="0.4 0.51 0.6"  scale="0.3 0.3 0.3">
+
+        </a-entity>
+
+        <a-entity class="button" gltf-model="#RedButton"  id="T" position="-0.4 0.51 0.8"  scale="0.3 0.3 0.3" >
+          
+        </a-entity>
+
+        <a-entity class="button" gltf-model="#RedButton" id="U" position="0.4 0.51 0.8"  scale="0.3 0.3 0.3">
+
+        </a-entity>
+
+        <a-entity class="button" gltf-model="#RedButton"  id="V" position="-0.4 0.51 1"  scale="0.3 0.3 0.3" >
+          
+        </a-entity>
+
+        <a-entity class="button" gltf-model="#RedButton" id="W" position="0.4 0.51 1"  scale="0.3 0.3 0.3">
+
+        </a-entity>
+
+        <a-entity class="button" gltf-model="#RedButton"  id="X" position="-0.2 0.51 1"  scale="0.3 0.3 0.3" >
+          
+        </a-entity>
+
+        <a-entity class="button" gltf-model="#RedButton" id="Z" position="0.2 0.51 1"  scale="0.3 0.3 0.3">
+
+        </a-entity>
+
+
         
         
         
         
-      </a-box>
+        
+        
+      </a-entity>
         
       <a-box position="3 0.5 -3" rotation="0 -45 0" color="#4CC3D9">
         <a-plane id="Plane_Image"  material="src:" position="0 1 0  " color="#fff"> <a-entity id="Panel_Signs" text="value:  Hello World;  color:  #000000 ;width: 3" position="1.15 0 0"></a-entity></a-plane>
       </a-box>
       
+        
       
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="100" height="100" color = "#5cff8a"></a-plane>
+      <a-plane position="0 -1 -4" rotation="-90 0 0" width="100" height="100" color = "#5cff8a"></a-plane>
       <a-sky color="#52b7d9"></a-sky>
     </a-scene>
 
