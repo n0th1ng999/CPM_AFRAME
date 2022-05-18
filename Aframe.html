@@ -35,11 +35,12 @@
         <video id="aslVID_X" autoplay loop="true" src="/Letras ASL/x-abc.mp4" volume="1"></video>
         <video id="aslVID_Y" autoplay loop="true" src="/Letras ASL/y-abc.mp4" volume="1"></video>
         <video id="aslVID_Z" autoplay loop="true" src="/Letras ASL/z-abc.mp4" volume="1"></video>
+        <img src="" alt="">
       </a-assets>
 
 
       <!--CAMERA-->
-      <a-entity position="0 2 1" camera="" wasd-controls="acceleration: 50" look-controls=""  rotation="0 0 0"
+      <a-entity position="0 1.5 1" camera="" wasd-controls="acceleration: 50" look-controls=""  rotation="0 0 0"
       data-aframe-inspector-original-camera="" cursor="rayOrigin: mouse" >
       <a-cursor position="0 0 -0.05" scale="0.04 0.04 1" material="" raycaster="far: 2; objects: .clickable"
           cursor="" geometry="">
@@ -193,7 +194,7 @@
 
         <a-entity class="button" gltf-model="#RedButton" id="Z" position="0.2 0.51 1"  scale="0.3 0.3 0.3">
           <a-plane rotation="0 90 0" width="0.2" height="0.2" material="src:" position="0 1 0  " color="#fff">
-            <a-entity text="value:  Z;  color:  #000000 ;width: 3" position="1.45 0 0"  ></a-entity>
+            <a-entity text="value:  Z;  color:  #000000 ;width: 3" position="1.45 0 0"  material="src:/Assets/Fundo/Cidade.png"></a-entity>
           </a-plane>
         </a-entity>
 
@@ -206,15 +207,15 @@
         
       </a-entity>
         
-
-      <a-entity  gltf-model="#Room" position="0 0 0" scale="1 1 1"></a-entity>
-
+     
+      <a-entity gltf-model="#Room" position="0 0 0" scale="1 1 1"></a-entity>
+      <a-plane src="Assets/Fundo/Cidade.png" rotation="0 180 0" position="0 1.36092 3.67207" width="10" height="3 " color="#fff" material="" geometry="width: 5.81; height: 2.76"></a-plane>
       
       
         
       
-      <a-plane position="0 -1 -4" rotation="-90 0 0" width="100" height="100" color = "#5cff8a"></a-plane>
-      <a-sky color="#52b7d9"></a-sky>
+     
+      <a-sky src="Assets/Fundo/Cidade.png" ></a-sky>
     </a-scene>
 
   </body>
